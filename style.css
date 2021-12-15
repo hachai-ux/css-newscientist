@@ -1,0 +1,47 @@
+div {
+}
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+body {
+  padding-top: 20px;
+}
+.top-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  justify-items: center;
+}
+
+.top-header div {
+  padding: 0;
+  justify-self: left;
+}
+.top-header h4 {
+  color: #00b3e5;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+}
+.top-header p {
+  color: #999;
+  width: 180px;
+}
+.top-header img {
+  width: 100%;
+}
+.top-header button {
+  display: flex;
+  justify-self: right;
+  padding: 7px 20px;
+  border: 0;
+  font-size: 14px;
+
+  border-radius: 3px;
+  background: #00b3e5;
+  color: #ffffff;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
