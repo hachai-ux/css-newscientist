@@ -45,3 +45,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+.top-nav {
+  display: grid;
+  grid-template-columns: 4.5fr 1fr;
+}
+.main-nav ul {
+  display: grid;
+  grid-gap: 10px;
+  justify-items: left;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  list-style: none;
+  padding: 0px;
+}
