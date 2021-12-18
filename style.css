@@ -8,9 +8,21 @@ p {
 }
 body {
   margin: 40px 20px 40px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 hr {
-  margin: 0 -20px;
+  margin: 0 -20000px;
+}
+
+figure {
+  margin: 0;
+}
+
+body .content-wrapper {
+  width: 1130px;
+  margin: auto;
 }
 
 .blue {
@@ -118,4 +130,24 @@ hr {
 
 .border-bottom {
   border-bottom: 5px solid #002837;
+}
+
+.main-body {
+  display: grid;
+  grid-template-columns: [first]5fr[second]1fr[third];
+  grid-template-areas:
+    "content side-box"
+    "aux-cta .";
+}
+
+.main-body main {
+  grid-area: content;
+}
+
+.main-body .side-box {
+  grid-area: side-box;
+}
+
+.main-body .aux-cta {
+  grid-area: aux-cta;
 }
