@@ -189,3 +189,30 @@ body .content-wrapper {
   background: #00b3e5;
   color: #f5f5f5;
 }
+
+.side-box .articles {
+  counter-reset: list-counter;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-box .articles li {
+  display: flex;
+  flex-direction: row;
+}
+
+.side-box .article-item {
+  counter-increment: list-counter;
+  background: #f5f5f5;
+}
+
+.side-box .article-item:after {
+  content: counter(list-counter);
+  background: #f5f5f5;
+  color: #00b3e5;
+  font-size: 22px;
+  font-family: "Titillium Web", Helvetica, Trebuchet MS, Arial, sans-serif;
+  font-weight: 700;
+  align-self: center;
+}
