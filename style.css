@@ -180,6 +180,40 @@ body .content-wrapper {
   line-height: 1.5625rem;
 }
 
+.main-body .article-topics {
+  display: flex;
+  list-style: none;
+  margin-bottom: 22px;
+}
+
+.main-body .article-topics p {
+  margin: 0;
+  padding-right: 10px;
+}
+.main-body .article-topics ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7.5px;
+}
+
+.main-body .article-topics button {
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  background: #005587;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 7.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  font-weight: 550;
+}
+
 .cta-box {
   background: #f5f5f5;
   padding: 7.5px;
