@@ -303,10 +303,11 @@ body .content-wrapper {
   gap: 10px;
 }
 
-.main-body .aux-cta .sharing-icons {
+.sharing-icons {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  margin: 10px 0;
 }
 
 .main-body .aux-cta .first-item {
@@ -352,4 +353,13 @@ body .content-wrapper {
 }
 .buy-button {
   background: #ff0000;
+}
+
+.card img {
+  width: 205px;
+}
+
+.card-link {
+  display: block;
+  color: black;
 }
