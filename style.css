@@ -43,7 +43,8 @@ figure {
 }
 
 body .content-wrapper {
-  width: 1130px;
+  width: auto;
+  max-width: 1130px;
   margin: auto;
 }
 
