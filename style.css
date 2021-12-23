@@ -1,3 +1,6 @@
+html {
+  overflow: auto;
+}
 a {
   text-decoration: none;
 }
@@ -14,14 +17,25 @@ p {
   margin: 0;
 }
 
+h2 {
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
 body {
-  margin: 40px 20px 40px 20px;
+  box-sizing: border-box;
+  padding: 40px 20px 40px 20px;
+  margin: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
 }
 hr {
-  margin: 0 -20000px;
+  width: 1000%;
+  margin-left: -500%;
 }
 
 figure {
@@ -355,8 +369,39 @@ body .content-wrapper {
   background: #ff0000;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 22px 22px;
+  grid-auto-flow: row;
+}
+.card {
+  display: grid;
+  grid-template-areas:
+    "top"
+    "bottom";
+}
 .card img {
-  width: 205px;
+  width: 100%;
+  grid-area: top;
+  padding-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: 550;
+  grid-area: bottom;
+}
+
+.card-label {
+  font-size: 14px;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  font-weight: 550;
+  background: #484848;
+  padding: 7.5px;
+  color: #ffffff;
+  grid-area: top;
+  place-self: start;
 }
 
 .card-link {
