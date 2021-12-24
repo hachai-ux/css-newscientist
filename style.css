@@ -26,7 +26,7 @@ h2 {
 
 body {
   box-sizing: border-box;
-  padding: 40px 20px 40px 20px;
+  padding: 40px 20px 0px 20px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -46,6 +46,13 @@ body .content-wrapper {
   width: auto;
   max-width: 1130px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header {
+  flex: 1;
 }
 
 .fa-facebook {
@@ -62,6 +69,9 @@ body .content-wrapper {
 }
 .fa-reddit {
   color: #ff4500;
+}
+.fa-pinterest {
+  color: #e60023;
 }
 .fa-envelope {
   color: #999999;
@@ -129,6 +139,7 @@ body .content-wrapper {
 .main-nav ul {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   list-style: none;
   padding: 0;
   flex-wrap: wrap;
@@ -177,6 +188,7 @@ body .content-wrapper {
 }
 
 .main-body {
+  flex: 1;
   display: grid;
   grid-template-columns: [first]5fr[second]1fr[third];
   grid-template-areas:
@@ -370,6 +382,9 @@ body .content-wrapper {
   background: #ff0000;
 }
 
+.more-articles {
+  flex: 1;
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
@@ -408,4 +423,28 @@ body .content-wrapper {
 .card-link {
   display: block;
   color: black;
+}
+
+.store-download {
+  width: 110px;
+}
+
+footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+footer:before {
+  content: "";
+  background-color: #f5f5f5;
+  position: absolute;
+
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
+  z-index: -1;
 }
