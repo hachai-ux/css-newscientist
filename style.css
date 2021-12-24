@@ -6,7 +6,7 @@ a {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 48px;
   margin: 0;
   font-family: "Titillium Web", Helvetica, Trebuchet MS, Arial, sans-serif;
 }
@@ -26,8 +26,8 @@ h2 {
 
 h3 {
   font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 22px;
+
   font-weight: 550;
 }
 
@@ -41,6 +41,9 @@ body {
   overflow: hidden;
 }
 hr {
+  width: 100%;
+}
+header hr {
   width: 1000%;
   margin: 0 0 0 -500%;
 }
@@ -88,6 +91,31 @@ header {
 }
 .blue {
   color: #00b3e5;
+}
+
+.published-date {
+  color: #4d4d4d;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  margin: 11px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.category-link {
+  font-weight: 550;
+  text-transform: uppercase;
+}
+
+.by-author {
+  color: #4d4d4d;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  margin: 0 0 11px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.author {
+  font-weight: 550;
 }
 
 .top-header {
@@ -221,6 +249,7 @@ header {
 
 .main-body .aux-cta {
   grid-area: aux-cta;
+  margin: 0 0 22px 0;
 }
 
 .main-body img {
@@ -440,8 +469,9 @@ footer {
   width: 100%;
   background-color: #f5f5f5;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
   position: relative;
 }
 
@@ -462,10 +492,10 @@ footer .newsletter {
 }
 
 .newsletter label {
-  float: left;
   color: #4d4d4d;
   font-size: 16px;
   font-family: "PT Serif", Georgia, serif;
+  padding: 5px 0;
 }
 
 .newsletter input {
@@ -474,12 +504,13 @@ footer .newsletter {
   border: none;
   border-bottom: 2px solid black;
   background-color: rgba(0, 0, 0, 0);
-  color: #;
+
   margin: 0 10px;
   width: 300px;
 }
 
-.newsletter button {
+.newsletter button,
+footer button {
   width: 240px;
   font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
   background: #005587;
@@ -491,4 +522,50 @@ footer .newsletter {
   text-transform: uppercase;
   color: #f5f5f5;
   font-weight: 550;
+  margin: 11px 0;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+  margin: 11px 0;
+}
+footer li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  padding-right: 11px;
+  margin-right: 11px;
+}
+
+footer li:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.footer-cta {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  margin: 22px 0;
+}
+.footer-cta h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer .back-to-top {
+  display: flex;
+  margin: 22px 0;
+  align-items: center;
+  gap: 11px;
+}
+footer .back-to-top a:not(:last-child) {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+}
+
+.fa-arrow-circle-up {
+  color: black;
 }
